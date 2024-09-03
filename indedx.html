@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card text-center shadow-lg">
+            <div class="card-body">
+                <h1 class="card-title display-4">Weather App</h1>
+                <p class="card-text lead">Get the current weather updates for your location or search for another city.</p>
+                <div id="weather">
+                    <div id="location" class="my-4">
+                        <button id="detect-location" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-map-marker-alt"></i> Detect My Location
+                        </button>
+                        <hr class="my-4">
+                        <input type="text" id="city" class="form-control form-control-lg mb-4" placeholder="Enter city name">
+                        <button id="get-weather" class="btn btn-primary btn-lg">
+                            <i class="fas fa-search"></i> Get Weather
+                        </button>
+                    </div>
+                    <div id="result" class="mt-4" style="display: none;">
+                        <i id="weather-icon" class="fas fa-sun fa-5x"></i> <!-- İkon için yer tutucu -->
+                        <h2 id="city-name" class="display-5 mt-3"></h2>
+                        <p id="temp" class="h3"></p>
+                        <p id="desc" class="h5 text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
