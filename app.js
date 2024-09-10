@@ -1,4 +1,4 @@
-const apiKey = '417442aee90b418a4ad8c9409cebb061';  // OpenWeatherMap API anahtarınızı buraya ekleyin
+const apiKey = '417442aee90b418a4ad8c9409cebb061';  // OpenWeatherMap API anahtarı
 
 document.getElementById('get-weather').addEventListener('click', () => {
     const city = document.getElementById('city').value;
